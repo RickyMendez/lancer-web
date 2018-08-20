@@ -1,0 +1,15 @@
+{
+  "name": "lancer-web",
+  "version": "1.0.0",
+  "description": "Lancer Automotive website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "live-server --open=dist/index.html"
+  },
+  "author": "Ricky Mendez",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
