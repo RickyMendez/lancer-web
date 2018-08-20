@@ -1,39 +1,60 @@
 * {
-  padding: 0;
-  margin: 0; }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
-  font-family: Arial;
-  width: 100%;
-  height: 100%;
-  background: #444444;
-  color: #ffffff;
-  position: relative; }
-  body a {
-    list-style-type: none; }
-
-#home-header {
   background: url("../img/lancer-header-bg.jpeg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  font-family: Arial;
   width: 100%;
-  height: 80vh; }
-  #home-header #header-brand {
+  height: 100%;
+  color: #ffffff;
+  position: relative; }
+  body ul {
+    list-style: none; }
+  body a {
+    text-decoration: none; }
+
+#home-header {
+  width: 100%;
+  height: 100vh;
+  font-size: 2.2rem; }
+  #home-header #home-header-brand {
     position: relative;
     float: left;
-    padding: 15px;
-    font-size: 2.5rem;
-    text-align: center; }
-    #home-header #header-brand h1 {
+    width: 100%;
+    text-align: center;
+    padding: 14px; }
+    #home-header #home-header-brand h1 {
       position: relative;
       float: left;
-      padding: 15px;
       width: 100%;
       color: #b30000; }
-    #home-header #header-brand p {
+    #home-header #home-header-brand p {
       position: relative;
       float: left;
-      padding: 8px;
       width: 100%;
       font-size: 1.5rem;
       text-align: center; }
+  #home-header #home-header-menu {
+    position: relative;
+    float: left; }
+    #home-header #home-header-menu h4 {
+      padding: 14px; }
+    #home-header #home-header-menu li {
+      border: 1px solid #ffffff;
+      padding: 14px; }
+      #home-header #home-header-menu li span.fas {
+        float: right; }
+
+.header-row {
+  width: 100%;
+  padding: 1rem; }
+
+.cs-nav-vertical {
+  list-style: none;
+  padding: 14px; }
