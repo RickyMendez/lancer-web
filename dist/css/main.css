@@ -6,14 +6,26 @@
   padding: 0; }
 
 body {
-  background: url("../img/lancer-header-bg.jpeg") no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   height: 100%;
   color: #ffffff;
   position: relative; }
+  body#bg-img {
+    background: url(../img/lancer-header-bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: rgba(34, 34, 34, 0.9); }
   body ul {
     list-style: none; }
   body a {
@@ -47,9 +59,25 @@ body {
       padding: 14px; }
     #home-header #home-header-menu li {
       border: 1px solid #ffffff;
-      padding: 14px; }
+      padding: 14px;
+      transition: all .5s ease-out; }
+      #home-header #home-header-menu li:hover {
+        cursor: pointer;
+        color: #808080; }
       #home-header #home-header-menu li span.fas {
         float: right; }
+      #home-header #home-header-menu li p {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease-out; }
+        #home-header #home-header-menu li p.show {
+          visibility: visible;
+          width: 100%;
+          height: fit-content;
+          opacity: 1; }
 
 .header-row {
   width: 100%;
@@ -58,3 +86,9 @@ body {
 .cs-nav-vertical {
   list-style: none;
   padding: 14px; }
+
+@media screen and (max-width: 500px) {
+  #home-header-brand h1 {
+    font-size: 2rem; }
+  h4 {
+    font-size: 1.6rem; } }
